@@ -253,7 +253,7 @@ footer p {
     /* Centrar en pantallas grandes */
     .container, #servicios, #plan, #contacto, .footer__grid {
         margin-inline: auto;
-        max-width: 1150px;
+        max-width: 1000px;
     }
 
     .servicios__lista {
