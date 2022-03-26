@@ -293,7 +293,7 @@ footer p {
 
     .flecha-derecha_2 {
         grid-column: 4/5;
-        max-width: 60px;
+        max-width: 50px;
         align-self: center;
         display: block;
     }
