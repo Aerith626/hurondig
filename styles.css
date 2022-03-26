@@ -272,8 +272,8 @@ footer p {
 
     #plan {
         display: grid;
-        grid-template-columns: 1fr 60px 1fr 60px 1fr;
-        gap: 2em;
+        grid-template-columns: 1fr 50px 1fr 50px 1fr;
+        gap: 2em .5em;
     }
 
     #plan h2 {
@@ -287,7 +287,7 @@ footer p {
     .flecha-derecha_1 {
         grid-column: 2/3;
         align-self: center;
-        max-width: 60px;
+        max-width: 50px;
         display: block;
     }
 
