@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+/* Texto */
+
+.cta__text {
+    color: #fff;
+}
+
+.cta__p {
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: .6em;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: .2em 0 .77em 0;
+    color: #161616;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1em;
+    color: #505050;
+    line-height: 1.5em;
+}
+
+a {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: inherit;
+}
+
+hr {
+    border-top: 2px solid #fff;
+    width: 4em;
+    margin: 0 auto 1em 6px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 3em;
+    background-color:#f17617;
+    border-radius: 35px;
+    text-transform: uppercase;
+    margin-top: 2em;
+}
+
+.btn-nav {
+    display:inline-block;
+    padding: .6em 1.2em;
+    color: #f2f2f2;
+    background: #f17617;
+    border-radius: 2rem;
+    font-size: .9rem;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #E9465C;
+    transition: 300ms ease-out all;
+}
+
+/* Max-width 45 ch ======================= */
+
+.container, .servicio__div, .plan__card, .form__div, .footer__grid {
+    margin-inline: auto;
+    max-width: 45ch;
+}
+
+/* Hero y nav */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    max-height: 64px;
+}
+
+.nav__list li {
+    display: inline-block;
+}
+
+nav{
+    font-weight: 600;
+}
+
+#hero {
+    background-image: url('img/hero-fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 2em;
+    position: relative;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+}
+
+.cta__logo {
+    display: none;
+}
+/* Servicios */
+
+#servicios {
+    text-align: center;
+    padding: 2em;
+}
+
+#servicios h2 {
+    margin-top: 2em;
+}
+
+#servicios img{
+    max-width: 128px;
+}
+.servicio__div {
+    margin-top: 3.5em;
+}
+
+
+/* Plan de trabajo */
+
+#plan {
+    text-align: center;
+    padding: 2em;
+}
+
+.plan__card {
+    background-color: #fff;
+    padding: 25px;
+    margin: 2em auto;
+    border-radius: 1em;
+    box-shadow: 0 .6em .7em rgba(0,0,0,.3);
+}
+
+.plan__card img {
+    width: calc(100% + 50px);
+    margin: -25px -25px 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px
+}
+
+.flecha-abajo {
+    max-width: 80px;
+}
+
+/* Contacto */
+
+#contacto {
+    text-align: center;
+    padding: 2em;
+}
+
+.form__input {
+    margin: .5em 0;
+    height: 3rem;
+    line-height: 3rem;
+    width: 100%;
+    border: 3px solid #929292;
+    border-radius: 2em;
+    padding: 0 1.4em;
+    font-size: 1rem;
+}
+
+.form__input:focus {
+    outline:none;
+}
+
+.form__div {
+    padding: 1.5em 0 1.2em;
+}
+
+
+.btn-input {
+    display: inline-block;
+    margin-top: 1em;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+    border:none;
+    color: #fff;
+    background: #f17617;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+/* Footer */
+
+footer {
+    background: #161616;
+}
+
+.footer__grid {
+    color: #f2f2f2;
+    padding: 2em;
+    display: grid;
+    gap: 2em;
+    grid-template-areas: 'top top'
+                        'left right'
+}
+
+footer p {
+    color: #f2f2f2;
+}
+
+.col-3 {
+    grid-area: top;
+    max-width: 45ch;
+}
+
+.col-1 {
+    grid-area: left;
+}
+
+.col-2 {
+    grid-area: right;
+}
+
+.flecha-derecha_1, .flecha-derecha_2 {
+    display: none;
+}
+
+@media (min-width: 950px) {
+
+    /* Centrar en pantallas grandes */
+    .container, #servicios, #plan, #contacto, .footer__grid {
+        margin-inline: auto;
+        max-width: 1150px;
+    }
+
+    .servicios__lista {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0 2em;
+    }
+
+    .servicios__lista h2 {
+        grid-column: span 3;
+    }
+
+    .servicio__div {
+        max-width: 45ch;
+    }
+
+    #plan {
+        display: grid;
+        grid-template-columns: 1fr 60px 1fr 60px 1fr;
+        gap: 2em;
+    }
+
+    #plan h2 {
+        grid-column: 1/6;
+    }
+
+    .flecha-abajo {
+        display: none;
+    }
+
+    .flecha-derecha_1 {
+        grid-column: 2/3;
+        align-self: center;
+        max-width: 60px;
+        display: block;
+    }
+
+    .flecha-derecha_2 {
+        grid-column: 4/5;
+        max-width: 60px;
+        align-self: center;
+        display: block;
+    }
+
+    .cta__logo {
+        display: block;
+        text-align: right;
+    }
+
+    .footer__grid {
+        grid-template-areas: 'top left'
+                        'top right'
+    }
+
+    .logo-hero {
+        min-height: 100px;
+        max-height: 400px;
+    }
+
+    .cta {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cta__presentacion {
+        max-width: 50ch;
+    }
+
+}
